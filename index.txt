@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tatiane Melo | Nutricionista Gastrointestinal</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+          },
+          colors: {
+            clinic: {
+              sage: '#4a6b5d', /* Verde sálvia - saúde intestinal/clínico */
+              sageLight: '#f4f7f5',
+              gold: '#c5a880', /* Dourado sutil - premium */
+              dark: '#1e2925',
+              slate: '#334155'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f4f7f5; color: #1e2925; overflow-x: hidden; }
+    
+    .btn-premium {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(74, 107, 93, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-white/80 backdrop-blur-md sticky top-0 w-full z-50 border-b border-clinic-sage/10">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="font-serif text-lg md:text-xl tracking-widest text-clinic-dark font-semibold">
+        TATIANE MELO <span class="font-sans text-[10px] block tracking-widest text-clinic-gold font-bold uppercase mt-0.5">Nutrição Gastrointestinal</span>
+      </div>
+      <a href="https://api.whatsapp.com/send?phone=5567981575619" target="_blank" class="btn-premium bg-clinic-sage text-white px-6 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase">
+        Agendar Consulta
+      </a>
+    </div>
+  </header>
+
+  <section class="py-20 md:py-28 bg-gradient-to-b from-white to-clinic-sageLight relative">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 space-y-6">
+        <span class="inline-flex items-center gap-2 text-clinic-sage bg-clinic-sage/10 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-clinic-gold"></i> Modulação Intestinal Integrativa
+        </span>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-clinic-dark leading-[1.2] font-normal">
+          A sua saúde <br><span class="italic text-clinic-sage font-semibold">começa no intestino.</span>
+        </h1>
+        <p class="text-base md:text-lg text-clinic-slate max-w-xl leading-relaxed font-medium">
+          Trate dores abdominais, gases, queimação, estufamento e inflamações crônicas através de um acompanhamento nutricional clínico focado em restaurar o seu equilíbrio de dentro para fora.
+        </p>
+        <div class="pt-4">
+          <a href="https://api.whatsapp.com/send?phone=5567981575619" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-clinic-sage text-white px-10 py-4 rounded-full font-bold text-sm tracking-wide shadow-md">
+            <i data-lucide="calendar" class="w-4 h-4 text-clinic-gold"></i> Mudar Minha Saúde Pelo WhatsApp
+          </a>
+        </div>
+      </div>
+      
+      <div class="md:col-span-5 relative">
+        <div class="absolute -inset-3 border border-clinic-gold/40 rounded-2xl transform translate-x-2 translate-y-2 -z-10"></div>
+        <img src="img/tatiane.webp" alt="Tatiane Melo Nutricionista" class="rounded-2xl w-full aspect-[4/5] object-cover shadow-xl bg-white"
+             onerror="this.src='https://images.unsplash.com/photo-1594824813573-246434e33963?q=80&w=1374&auto=format&fit=crop';">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="font-serif text-3xl md:text-4xl text-clinic-dark">Você convive diariamente com algum desses sintomas?</h2>
+        <div class="w-12 h-0.5 bg-clinic-gold mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-clinic-sageLight rounded-xl border border-clinic-sage/5">
+          <i data-lucide="frown" class="w-8 h-8 text-clinic-sage mb-4"></i>
+          <h3 class="font-bold text-clinic-dark mb-2">Estufamento & Gases</h3>
+          <p class="text-xs text-clinic-slate leading-relaxed font-medium">Sensação de inchaço abdominal extremo logo após qualquer refeição simples.</p>
+        </div>
+        <div class="p-6 bg-clinic-sageLight rounded-xl border border-clinic-sage/5">
+          <i data-lucide="alert-circle" class="w-8 h-8 text-clinic-sage mb-4"></i>
+          <h3 class="font-bold text-clinic-dark mb-2">Refluxo & Queimação</h3>
+          <p class="text-xs text-clinic-slate leading-relaxed font-medium">Desconforto gástrico constante que atrapalha o seu sono e o seu rendimento no dia.</p>
+        </div>
+        <div class="p-6 bg-clinic-sageLight rounded-xl border border-clinic-sage/5">
+          <i data-lucide="shield-alert" class="w-8 h-8 text-clinic-sage mb-4"></i>
+          <h3 class="font-bold text-clinic-dark mb-2">Intestino Irregular</h3>
+          <p class="text-xs text-clinic-slate leading-relaxed font-medium">Alternância constante entre constipação severa e episódios de diarreia ou dores.</p>
+        </div>
+        <div class="p-6 bg-clinic-sageLight rounded-xl border border-clinic-sage/5">
+          <i data-lucide="battery-low" class="w-8 h-8 text-clinic-sage mb-4"></i>
+          <h3 class="font-bold text-clinic-dark mb-2">Cansaço Crônico</h3>
+          <p class="text-xs text-clinic-slate leading-relaxed font-medium">Falta de energia gerada pela má absorção de nutrientes vitais devido à disbiose.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-clinic-sageLight">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-5">
+          <h2 class="font-serif text-3xl md:text-4xl text-clinic-dark leading-tight">Como funciona o tratamento clínico</h2>
+          <p class="text-sm text-clinic-slate font-medium mt-4 leading-relaxed">Não se trata de entregar uma folha de dieta engessada, e sim de reestruturar o ecossistema do seu corpo.</p>
+        </div>
+        <div class="md:col-span-7 space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-clinic-sage/10 flex gap-4 items-start">
+            <div class="bg-clinic-sage/10 text-clinic-sage p-2.5 rounded-lg"><i data-lucide="clipboard-list" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-clinic-dark">Investigação Detalhada</h4>
+              <p class="text-xs text-clinic-slate mt-1 font-medium leading-relaxed">Análise minuciosa do seu histórico clínico de sintomas gastrointestinais, exames de sangue e rotina diária.</p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-clinic-sage/10 flex gap-4 items-start">
+            <div class="bg-clinic-sage/10 text-clinic-sage p-2.5 rounded-lg"><i data-lucide="heart-handshake" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-clinic-dark">Modulação Prática e Viável</h4>
+              <p class="text-xs text-clinic-slate mt-1 font-medium leading-relaxed">Prescrição focada em fitoterapia funcional e alimentos que reparam a barreira intestinal, sem restrições extremas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+      <span class="font-serif text-xs uppercase tracking-widest text-clinic-gold font-bold">Sua Nutricionista</span>
+      <h2 class="font-serif text-3xl md:text-4xl text-clinic-dark">Tatiane Melo</h2>
+      <p class="text-base text-clinic-slate max-w-2xl mx-auto leading-relaxed font-medium">
+        Especialista em Nutrição Clínica aplicada à Gastroenterologia e Modulação Intestinal. Com atuação dedicada em Chapadão do Sul, ajudo meus pacientes a recuperarem o bem-estar e a qualidade de vida ao entenderem que cuidar do sistema digestivo é a chave principal para prevenir inflamações e restabelecer a imunidade orgânica.
+      </p>
+      <div class="text-xs text-clinic-sage font-bold tracking-wider uppercase pt-2">
+        Atendimento Presencial em Chapadão do Sul - MS & Online para todo o Brasil
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-clinic-dark text-white text-center relative overflow-hidden">
+    <div class="max-w-3xl mx-auto px-6 relative z-10 space-y-8">
+      <h2 class="font-serif text-3xl md:text-5xl leading-tight font-normal">Recupere o prazer de comer sem sentir dores.</h2>
+      <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
+        Clique abaixo para falar diretamente comigo e entender qual a modalidade de consulta ideal para o seu caso atual.
+      </p>
+      <div>
+        <a href="https://api.whatsapp.com/send?phone=5567981575619" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-clinic-sage text-white px-12 py-4.5 rounded-full font-bold text-sm tracking-wide shadow-xl">
+          <i data-lucide="message-circle" class="w-5 h-5 text-clinic-gold"></i> Agendar Consulta no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 bg-white text-center text-clinic-slate text-[11px] font-medium tracking-wider uppercase border-t border-clinic-sage/10">
+    <p>© 2026 Tatiane Melo Nutricionista — Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
